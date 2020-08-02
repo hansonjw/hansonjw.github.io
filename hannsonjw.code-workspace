@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../run-buddy"
+		},
+		{
+			"path": "../ucb"
+		}
+	],
+	"settings": {}
+}

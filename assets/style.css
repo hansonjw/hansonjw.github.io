@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: brown;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: whitesmoke;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color:whitesmoke;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+}
+
+header nav ul li:hover {
+    background:darkred;
+    color: #FFFFFF;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+footer {
+    background: white;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: content;
+    flex-wrap: wrap;
+    align-items: top;
+    background-attachment: fixed;
+}
+
+body {
+    /* background: darkred; */
+}
+
+section {
+    padding: 60px;
+}
+
+.section-title {
+    background-image:  url("./images/climatechange.jpeg");
+    background-size: cover;
+    font-size: 48px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    box-shadow: 0 0 10px 10px white inset;
+}
+
+.intro{
+    display: flex;
+}
+
+.img-menasa {
+    background-image: url("./images/menasa.jpeg");
+    background-size: 100%;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px 10px white inset;
+    background-repeat: no-repeat;
+}
+
+.img-me {
+    background-image: url("./images/me.jpeg");
+    background-size: 100%;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px 10px white inset;
+    background-repeat: no-repeat;
+}
+
+.img-annie {
+    background-image: url("./images/Annie.jpeg");
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px 10px white inset;
+    background-repeat: no-repeat;
+}
+
+.me-bio p {
+    width: 300px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    opacity: .8;
+}
+
+
+.mystuff {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mystuff article {
+
+}
+
+.tiles {
+    width: 200px;
+    min-height: 200px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tiles-big {
+    width: 400px;
+    min-height: 400px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-common {
+    background-image: url("./images/final.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;    
+}
+
+.img-common:hover{
+    opacity: 1;
+}
+
+.img-rebel {
+    background-image: url("./images/rebelbuilder.png");
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.img-rebel:hover{
+    opacity: 1;
+}
+
+.img-run {
+    background-image: url("./images/hero-bg.jpg");
+    background-size: 300%;
+    background-position: right;
+    opacity: 0.5;
+}
+
+.img-run:hover{
+    opacity: 1;
+}
+
+.img-chart {
+    background-image: url("./images/decades.png");
+    background-size: cover;
+    background-position: left;
+    opacity: 0.5;
+}
+
+.img-chart:hover{
+    opacity: 1;
+}
+
+.img-fourths {
+    background-image: url("./images/circle4ths.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.img-fourths:hover{
+    opacity: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1 fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+        "cc rb run run in sm"
+        "cc rb run run in sm"
+
+}
+
+#grid-run {
+    grid-area: run;
+}
+
+#grid-common {
+    grid-area: cc;
+}
+
+#grid-rebel {
+    grid-area: rb;
+}
+
+#grid-chart {
+    grid-area: in;
+}
+
+#grid-fourths {
+    grid-area: sm;
+}
+
+
+
+
+/* Check this out for the work images / boxes */
+/* https://www.w3schools.com/css/css_image_transparency.asp */
